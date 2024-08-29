@@ -1,6 +1,6 @@
 import sys
 import argparse
-from speakinsight.utils import read_file, create_tenses_prompt
+from speakinsight.utils import read_file, evaluate_tenses, evaluate_grammar
 from speakinsight.ModelManager import ModelManager
 
 def main():
@@ -11,9 +11,9 @@ def main():
     data = read_file(args.filepath)
 
     model = ModelManager()
-    prompt = create_tenses_prompt(data)
-    response = model.invoke(prompt)
-    print(response)
+    evaluate_tenses(data, model, "output/tenses_analysis.json", verbose=False)
+    evaluate_grammar(data, model, "output/grammar_analysis.json", verbose=False)
+
 
 if __name__ == "__main__":
     main()
