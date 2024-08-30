@@ -13,16 +13,22 @@ def read_file(file_path):
 
 def evaluate_tenses(data, model, file_path, verbose):
     """Prompt for model to find tenses errors in the data provided."""
-    messages = [
-        {'role': 'system', 'content': 'Please analyze the following dialogue for tense consistency. Identify any instances where the use of tense is incorrect or inconsistent, and suggest corrections. Provide a detailed explanation for each correction.Return in a json format with the  names of conversation persons according to following {"User1s Name":{mistakes:[{mistake: the mistake, correction: the correct word, tense misused: the actual problem}], most_troublesome_area: The area in which the user has the most problem}},{"User2s Name":{mistakes:[{mistake: the mistake, correction: the correct word, tense misused: the actual problem}], most_troublesome_area: The area in which the user has the most problem}}'},
-        {'role':'user', 'content':f'{data}'}
-    ]
-    evaluate(messages, model, file_path, verbose)
+    message = [
+    {'role': 'system', 'content': 'Please analyze the following dialogue for tense consistency. Identify any instances where the use of tense is incorrect or inconsistent, and suggest corrections. Provide a detailed explanation for each correction. Return result in a json format according to following example: {mistakes:[{mistake: the mistake, correction: the correct word, tense misused: the actual problem}]}'}]
+    with open(file_path, 'a') as file:
+        file.write('\n\n{')
+        for user in data:
+            file.write(f'"{user}":')
+            for dialouge in data[user]:
+                messages = message.append({'role':'user', 'content':f'{dialouge}'})
+                response = model.invoke(messages)
+                file.write(response)
+        file.write('}')
 
 def evaluate_grammar(data, model, file_path, verbose):
     """Prompt for model to find tenses errors in the data provided."""
     messages = [
-        {'role': 'system', 'content': 'Please analyze the following dialogue for grammatical correctness. Identify any grammatical errors, including sentence structure, subject-verb agreement, punctuation, and other syntax issues. Provide a correction for each error, along with a brief explanation..Return in a json format with names of conversation persons according to  the following {"User1s Name":{mistakes:[{mistake: the mistake, correction: the correct word, problem: the actual problem}], most_troublesome_area: The area in which the user has the most problem}},{"User2s Name":{mistakes:[{mistake: the mistake, correction: the correct word, problem: the actual problem}], most_troublesome_area: The area in which the user has the most problem}}'},
+        {'role': 'system', 'content': 'Please analyze the following dialogue for grammatical correctness. Identify any grammatical errors, including sentence structure, subject-verb agreement, punctuation, and other syntax issues. Provide a correction for each error, along with a brief explanation..Return in a json format according to  the following {"User1s Name":{mistakes:[{mistake: the mistake, correction: the correct word, problem: the actual problem}], most_troublesome_area: The area in which the user has the most problem}},{"User2s Name":{mistakes:[{mistake: the mistake, correction: the correct word, problem: the actual problem}], most_troublesome_area: The area in which the user has the most problem}}'},
         {'role':'user', 'content':f'Dialogue {data}'}
     ]
     evaluate(messages, model, file_path, verbose)
@@ -41,18 +47,17 @@ def evaluate_sentence_structure_and_clarity(data, model, file_path, verbose):
     ]
     evaluate(messages, model, file_path, verbose)
 
-def evaluate(messages, model, file_path, verbose):
-    with open(file_path, 'a') as file:
-        file.write('\n\n{')
-        for chunks in model.stream(messages):
-            print(chunks)
-            delta = chunks['choices'][0]['delta']
-            if 'role' in delta:
-                if verbose:
-                    print(delta['role'] + ': ', end='')
-                file.write(delta['role'] + ': ')
-            elif 'content' in delta:
-                if verbose:
-                    print(delta['content'], end='')
-                file.write(delta['content'])
-        file.write('}')
+def evaluate(messages, model):
+    response = model.invoke(messages)
+    return response
+    # for chunks in model.stream(messages):
+    #     delta = chunks['choices'][0]['delta']
+    #     if 'role' in delta:
+    #         if verbose:
+    #             print(delta['role'] + ': ', end='')
+    #         file.write(delta['role'] + ': ')
+    #     elif 'content' in delta:
+    #         if verbose:
+    #             print(delta['content'], end='')
+    #         file.write(delta['content'])
+
