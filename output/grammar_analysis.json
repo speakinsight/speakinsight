@@ -1,64 +1,84 @@
 {
     "assistant": {
-        "Name of User1": {
+        "User1s Name": {
             "mistakes": [
                 {
-                    "correction": "let's start the standup.",
-                    "mistake": "lets start the standup.",
-                    "problem": "The subject 'lets' is not in agreement with the plural verb 'start'. The correct form is 'let's' to agree with the plural subject."
+                    "correction": "Let's start the stand-up.",
+                    "mistake": "OK, let's start the stand up.",
+                    "problem": "The phrase 'stand up' is a colloquial term and should be in title case."
                 },
                 {
-                    "correction": "On what things have you been working on?",
-                    "mistake": "On what things have you guys been working on?",
-                    "problem": "The sentence is grammatically correct."
+                    "correction": "So,",
+                    "mistake": "So",
+                    "problem": "The comma is missing after 'So' which is used to introduce a new sentence or idea."
                 },
                 {
-                    "correction": "I've been focusing on the new feature for the data analytics dashboard.",
-                    "mistake": "I been focusing on the new feature for the data analytics dashboard.",
-                    "problem": "The present perfect form 'have been' is used incorrectly. The correct form is 'I've been' to agree with the subject 'I'."
+                    "correction": "And,",
+                    "mistake": "And",
+                    "problem": "The comma is missing after 'And' which is used to introduce a new sentence or idea."
                 },
                 {
-                    "correction": "There were some issues with the API integration, but I think it should be resolved by today.",
-                    "mistake": "There was some issues with the API integration, but I think it should be resolved by today.",
-                    "problem": "The verb 'were' is needed to agree with the plural subject 'issues'."
+                    "correction": "Yes, I, yes, yes.",
+                    "mistake": "I, yes, yes.",
+                    "problem": "The word 'I' should be capitalized at the beginning of a new sentence."
                 },
                 {
-                    "correction": "Once you're done with the bug fixes, let's have a quick call to go over them.",
-                    "mistake": "Once you are done with the bug fixes, let's have a quick call to go over them.",
-                    "problem": "The verb 'are' should be changed to 'you're' which is a contraction for 'you are'. The correct form is 'let's' to agree with the plural subject 'you're'."
+                    "correction": "You can share your status. I will ask you about any update regarding the school program.",
+                    "mistake": "you can share your status. I will ask you,, any update regarding the school program.",
+                    "problem": "The phrase 'about any update' is missing a preposition 'about' before 'any update'."
                 },
                 {
-                    "correction": "But I'm still gathering the requirements.",
-                    "mistake": "But I'm still gathering the requirement.",
-                    "problem": "The verb 'requirements' should be in plural form to agree with the subject 'I'."
+                    "correction": "OK. That's all from your end.",
+                    "mistake": "OK. OK.",
+                    "problem": "The phrase 'That's all from your end' should replace 'OK. OK.' to provide a clear response."
                 },
                 {
-                    "correction": "Let's aim to wrap up these tasks by the end of the day.",
-                    "mistake": "Let's aim to wrap up these tasks by end of the day.",
-                    "problem": "The phrase 'by end of the day' is not clear. The correct phrase is 'by the end of the day'."
+                    "correction": "So, Gray, I was working on a school ground chatwood activity and I am now experimenting with different kinds of problems for the chatbot activity.",
+                    "mistake": "so, Gray, I was working on a school ground chatwood activity and I am now seeing different I I'm experimenting with different kinds of problems for the chatbot activity.",
+                    "problem": "The phrase 'I am now seeing different' should be 'I am now experimenting with different' to maintain grammatical correctness."
+                },
+                {
+                    "correction": "So, basically, I'm doing engineering and then I will update you on the result.",
+                    "mistake": "So basically I'm doing engineering and then I will update you on what, what's the result?",
+                    "problem": "The phrase 'what, what's the result?' should be 'the result' to maintain grammatical correctness."
+                },
+                {
+                    "correction": "OK, great. That's all from your end.",
+                    "mistake": "OK, great. That's all from your end.",
+                    "problem": "No grammatical errors found."
+                },
+                {
+                    "correction": "Yes, that's all from my end.",
+                    "mistake": "yes, that's all from my end.",
+                    "problem": "No grammatical errors found."
+                },
+                {
+                    "correction": "OK. Let's see how this caption's results look.",
+                    "mistake": "OK. Let's see how this caption results look.",
+                    "problem": "The phrase 'results look' should be 'results look' to maintain grammatical correctness."
                 }
             ],
-            "most_troublesome_area": "Verb agreement and subject-verb agreement"
+            "most_troublesome_area": "Sentence structure and clarity"
         },
-        "Name of User2": {
+        "User2s Name": {
             "mistakes": [
                 {
-                    "correction": "I think it should be resolved by the end of today.",
-                    "mistake": "I think it should be resolved by today.",
-                    "problem": "The phrase 'by today' is ambiguous. The correct phrase is 'by the end of today' to clearly indicate the time frame."
+                    "correction": "And,",
+                    "mistake": "And",
+                    "problem": "The comma is missing after 'And' which is used to introduce a new sentence or idea."
                 },
                 {
-                    "correction": "I'll keep you updated.",
-                    "mistake": "I'll keep you updated.",
-                    "problem": "The sentence is grammatically correct."
+                    "correction": "OK, great. That's all from your end.",
+                    "mistake": "OK, great. That's all from your end.",
+                    "problem": "No grammatical errors found."
                 },
                 {
-                    "correction": "Let's make sure to stay on track with our timeline.",
-                    "mistake": "Let's make sure to stay on track with our timelines.",
-                    "problem": "The word 'timelines' should be singular to agree with the subject 'our'."
+                    "correction": "OK. Let's see how this caption's results look.",
+                    "mistake": "OK. Let's see how this caption results look.",
+                    "problem": "The phrase 'results look' should be 'results look' to maintain grammatical correctness."
                 }
             ],
-            "most_troublesome_area": "Clarity and singular/plural agreement"
+            "most_troublesome_area": "Sentence structure and clarity"
         }
     }
 }

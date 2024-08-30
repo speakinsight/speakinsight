@@ -1,6 +1,6 @@
 import sys
 import argparse
-from speakinsight.utils import read_file, evaluate_tenses, evaluate_grammar
+from speakinsight.utils import read_file, evaluate_tenses, evaluate_grammar, evaluate_vocabulary, evaluate_sentence_structure_and_clarity
 from speakinsight.ModelManager import ModelManager
 
 def main():
@@ -13,6 +13,8 @@ def main():
     model = ModelManager()
     evaluate_tenses(data, model, "output/tenses_analysis.json", verbose=False)
     evaluate_grammar(data, model, "output/grammar_analysis.json", verbose=False)
+    evaluate_vocabulary(data, model, "output/vocabulary_analysis.json", verbose=False)
+    # evaluate_sentence_structure_and_clarity(data, model, "output/sentence_structure_analysis.json", verbose=False)
 
 
 if __name__ == "__main__":
