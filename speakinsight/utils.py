@@ -1,4 +1,14 @@
+MESSAGE = [
+    {'role': 'system', 'content': """Analyze the given dialogue for tense consistency. Identify any instances of incorrect or inconsistent tense usage. For each issue found, generate a JSON response with the following structure:
 
+{
+  "dialogue": "The original sentence with tense inconsistency",
+  "mistake": "Description of the incorrect tense usage",
+  "correction": "The sentence with the correct tense",
+  "description": "Brief explanation of the tense error"
+}
+
+Return only the JSON responses for the identified issues."""}]
 
 
 def read_file(file_path):
@@ -13,17 +23,16 @@ def read_file(file_path):
 
 def evaluate_tenses(data, model, file_path, verbose):
     """Prompt for model to find tenses errors in the data provided."""
-    message = [
-    {'role': 'system', 'content': 'Please analyze the following dialogue for tense consistency. Identify any instances where the use of tense is incorrect or inconsistent, and suggest corrections. Provide a detailed explanation for each correction. Return result in a json format according to following example: {mistakes:[{mistake: the mistake, correction: the correct word, tense misused: the actual problem}]}'}]
     with open(file_path, 'a') as file:
         file.write('\n\n{')
         for user in data:
             file.write(f'"{user}":')
-            for dialouge in data[user]:
-                messages = message.append({'role':'user', 'content':f'{dialouge}'})
-                response = model.invoke(messages)
-                file.write(response)
-        file.write('}')
+            print("User: ", user)
+            dialouges = "\n".join(data[user])
+            print("Dialouges: ", dialouges)
+            response = model.invoke(MESSAGE + [{'role':'user', 'content':f'{dialouges.strip()}'}]).content
+            file.write(response)
+        file.write('},')
 
 def evaluate_grammar(data, model, file_path, verbose):
     """Prompt for model to find tenses errors in the data provided."""

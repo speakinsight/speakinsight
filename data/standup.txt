@@ -1,35 +1,11 @@
 Zohaib Munir
-OK, let's start the stand up.
-
-Zohaib Munir
-So
+OK, let's start the stand-up meeting. I hope everyone is doing well today. I think we have a lot to cover, so let's get into it.
 
 Ikram Ali
-And
+Yes, Zohaib. So, last week I was working on the new user interface for the dashboard, and I am have completed most of the design by yesterday. I had been facing some issues with the responsiveness, but I am resolving them as I go. I think it should be ready for testing by tomorrow.
 
 Zohaib Munir
-I, yes, yes.
+That’s good to hear, Ikram. I remembered you mentioning that the API integration was going to be a challenge. How it was going with that?
 
 Ikram Ali
-So
-
-Zohaib Munir
-Yeah.
-
-Ikram Ali
-you can share your status. I will ask you,, any update regarding the school program.
-
-Zohaib Munir
-OK. OK.
-
-Zohaib Munir
-so, Gray, I was working on a school ground chatwood activity and I am now seeing different I I'm experimenting with different kinds of problems for the chatbot activity. So basically I'm doing engineering and then I will update you on what, what's the result?
-
-Ikram Ali
-OK, great. That's all from your end.
-
-Zohaib Munir
-yes, that's all from my end.
-
-Ikram Ali
-OK. Let's see how this caption results look.
+Actually, Zohaib, the API integration turned out to be more complicated than we were initially thinking. I have been working closely with the backend team, but we are facing some unexpected errors. We were hoping to finish it by the end of the week, but it might take a little longer.

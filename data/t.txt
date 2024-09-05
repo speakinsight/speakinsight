@@ -1,0 +1,113 @@
+Hasnain Ali Arain
+OK.
+
+Ikram Ali
+And let's start it. So
+
+Hasnain Ali Arain
+Order.
+
+Ikram Ali
+Have you Working with the speaking side person.
+
+Hasnain Ali Arain
+No, I worked it on the last working day on Friday.
+
+Ikram Ali
+OK, and
+
+Hasnain Ali Arain
+Yes.
+
+Ikram Ali
+What do you think it contained everything which helped us to improve our communication.
+
+Hasnain Ali Arain
+Yes, I think it is mostly capturing called the grammatical errors in the speech. And just provided good feedback. So it can be helpful.
+
+Ikram Ali
+OK. So you know what?
+
+Hasnain Ali Arain
+Yes.
+
+Ikram Ali
+I want to add a feature where it's
+
+Hasnain Ali Arain
+OK.
+
+Ikram Ali
+detected. The fluency, the accent, that been foundunciations. Like
+
+Hasnain Ali Arain
+OK.
+
+Ikram Ali
+which I told you remember in Google how to pronounce a word better like
+
+Hasnain Ali Arain
+OK.
+
+Ikram Ali
+P E W T R and but
+
+Hasnain Ali Arain
+Right
+
+Ikram Ali
+we want that. We can convert our sentences in that format. And we have audio
+
+Hasnain Ali Arain
+OK
+
+Ikram Ali
+features which detect our fluency.
+
+Hasnain Ali Arain
+Yes, so we will have to add a speech to text API. And then in order to provide the correct pronunciation. We would also need a text to speech APA as well. And we would be integrating both of these APIs.
+
+Ikram Ali
+Right, but the caveat is that
+
+Hasnain Ali Arain
+Yeah.
+
+Ikram Ali
+Whisper will not work. We need a API.
+
+Hasnain Ali Arain
+OK.
+
+Ikram Ali
+Which Exactly designed for distance, whisper is just for converting English English into the text. Not affluent or you're detecting your net.
+
+Hasnain Ali Arain
+Hm, exactly, makes sense.
+
+Ikram Ali
+OK, done.
+
+Hasnain Ali Arain
+OK.
+
+Ikram Ali
+Right now, I will share this result with you. Or
+
+Ikram Ali
+In the output format, OK, I'm sharing the CXC
+
+Hasnain Ali Arain
+OK.
+
+Ikram Ali
+file with you.
+
+Hasnain Ali Arain
+All right, sir. All right. Sure.
+
+Ikram Ali
+can share with me. I will see. Out of there looks like, OK?
+
+Hasnain Ali Arain
+OK, OK. Perfect.

@@ -1,34 +1,15 @@
-{
-    "assistant": {
-        "Ikram Ali": {
-            "mistakes": [
-                {
-                    "correction": "OK, that's all from your end.",
-                    "mistake": "OK, great. That's all from your end.",
-                    "tense misused": "The phrase 'That's all from your end' is in the past tense, while the rest of the sentence is in the present tense. It should be consistent with the rest of the sentence."
-                }
-            ],
-            "most_troublesome_area": "Tense consistency."
-        },
-        "Zohaib Munir": {
-            "mistakes": [
-                {
-                    "correction": "I'm yes, yes.",
-                    "mistake": "I, yes, yes.",
-                    "tense misused": "Present tense 'I' is used instead of 'I'm' which is the contraction of 'I am' in present tense."
-                },
-                {
-                    "correction": "OK, okay.",
-                    "mistake": "OK. OK.",
-                    "tense misused": "The use of 'OK' twice in a row is redundant. 'Okay' could be used once for clarity."
-                },
-                {
-                    "correction": "Gray, I was working on a school ground chatwood activity and I am now seeing different issues. I'm experimenting with different kinds of problems for the chatbot activity.",
-                    "mistake": "Gray, I was working on a school ground chatwood activity and I am now seeing different I I'm experimenting with different kinds of problems for the chatbot activity.",
-                    "tense misused": "The sentence structure is a bit confusing. 'I am now seeing different I' could be simplified to 'I am now seeing different issues' for clarity and correct tense usage."
-                }
-            ],
-            "most_troublesome_area": "Tense consistency and clarity in sentence structure."
-        }
-    }
-}
+
+
+{"Hasnain Ali Arain":{
+    "dialogue": "No, I worked it on the last working day on Friday.",
+    "mistake": "Incorrect use of past tense",
+    "correction": "No, I worked on it on the last working day on Friday.",
+    "description": "The sentence should use the present perfect tense 'have worked' instead of the simple past tense 'worked' to indicate the action was completed before the current time."
+  }"Ikram Ali":
+
+{"Hasnain Ali Arain":{
+    "dialogue": "No, I worked it on the last working day on Friday.",
+    "mistake": "Switching from present to past tense",
+    "correction": "No, I worked on it last Friday.",
+    "description": "The sentence starts with 'No' in the present tense, but then switches to the past tense 'worked' without a clear reason."
+  }"Ikram Ali":
